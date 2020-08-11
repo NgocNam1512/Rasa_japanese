@@ -1,0 +1,19 @@
+intents:
+  - greet
+  - goodbye
+  - ask_bot
+  - feedback
+responses:
+  utter_greet:
+  - text: "こんにちは"
+  - text: "abc"
+  - text: "bbc"
+
+  utter_goodbye:
+  - text: "さようなら"
+entities:
+  - product_name
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
