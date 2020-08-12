@@ -2,6 +2,8 @@ intents:
   - greet
   - goodbye
   - ask_bot
+  - give_name
+  - give_job
   - feedback
 responses:
   utter_greet:
@@ -11,8 +13,25 @@ responses:
 
   utter_goodbye:
   - text: "さようなら"
+
+  utter_greet_with_name:
+  - text: "hello {cus_name}"
+
+  utter_return_job:
+  - text: "{cus_job}"
+
 entities:
   - product_name
+  - cus_name
+  - cus_job
+slots:
+  cus_name:
+    type: text
+  cus_job:
+    type: text
+
+actions:
+  - action_hello_world
 
 session_config:
   session_expiration_time: 60

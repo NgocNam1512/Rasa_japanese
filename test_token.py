@@ -9,9 +9,10 @@
 import spacy
 
 nlp = spacy.load('ja_ginza')
-doc = nlp('あのラーメン屋にはよく行く。美味しいんだ。')
+doc1 = nlp('猫を飼う')
+doc2 = nlp('靴を買う')
 
-for sent in doc.sents:
+for sent in doc1.sents:
     for token in sent:
         info = [
             token.i,         # トークン番号

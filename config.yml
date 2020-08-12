@@ -2,7 +2,7 @@
 # https://rasa.com/docs/rasa/nlu/components/
 language: jp
 pipeline:
-  - name: "test_mecab.JapaneseTokenizer"
+  - name: "test_sudachi.JapaneseTokenizer"
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
